@@ -15,7 +15,7 @@ Yahoo, OpenID Connect (OIDC) providers and SAML providers. It is built on top of
 The FirebaseUI component implements best practices for authentication on mobile
 devices and websites, helping to sign-in and sign-up conversion for your app. It
 also handles cases like account recovery and account linking that can be
-security sensitive and error-prone to handle.
+security-sensitive and error-prone to handle.
 
 FirebaseUI Auth clients are also available for
 [iOS](https://github.com/firebase/firebaseui-ios) and
@@ -398,7 +398,7 @@ FirebaseUI supports the following configuration parameters.
 <td>
   A boolean which determines whether to immediately redirect to the provider's
   site or instead show the default 'Sign in with Provider' button when there is
-  only a single federated provider in <code>signInOptions</code>. In order for
+  only a single federated provider in <code>signInOptions</code>. For
   this option to take effect, the <code>signInOptions</code> must only hold a
   single federated provider (like 'google.com') and signInFlow must be set to
   'redirect'.
@@ -427,7 +427,7 @@ FirebaseUI supports the following configuration parameters.
 <td>Yes</td>
 <td>
   The URL of the Terms of Service page or a callback function to be invoked
-  when Terms of Service link is clicked.
+  when the Terms of Service link is clicked.
 </td>
 </tr>
 <tr>
@@ -435,7 +435,7 @@ FirebaseUI supports the following configuration parameters.
 <td>Yes</td>
 <td>
   The URL of the Privacy Policy page or a callback function to be invoked
-  when Privacy Policy link is clicked.
+  when the Privacy Policy link is clicked.
 </td>
 </tr>
 <tr>
@@ -446,7 +446,7 @@ FirebaseUI supports the following configuration parameters.
   Learn more about [GCIP](https://cloud.google.com/identity-platform/).
   The object for configuring `adminRestrictedOperation` options, contains 3
   fields:
-  `status(boolean)`: This flag should mirror the project user actions
+  `status(boolean)`: This flag should mirror the project user's actions
   ("Enable create") settings. When sign-up is disabled in the project settings,
   this should be set to `true`. Setting this to `true` without disabling sign-up
   in the project settings will not have any effect. For GCIP projects, this is
@@ -661,7 +661,7 @@ parameters.
 <td>buttonColor</td>
 <td>No</td>
 <td>
-  The color of sign in button. The css of the button can be overwritten with
+  The color of sign in button. The CSS of the button can be overwritten with
   the attribute/value in the HTML element:
   <code>data-provider-id="providerId"</code>
 </td>
@@ -678,7 +678,7 @@ parameters.
 <td>scopes</td>
 <td>No</td>
 <td>
-  The list of additional OAuth 2.0 scopes beyond basic profile that you want to
+  The list of additional OAuth 2.0 scopes beyond the basic profile that you want to
   request from the authentication provider.
 </td>
 </tr>
@@ -696,7 +696,7 @@ parameters.
 <td>
   The key of the custom parameter, with which the login hint can be passed to
   the provider. This is useful in case a user previously signs up with an IdP
-  like Microsoft and then tries to sign in with email using the same Microsoft
+  like Microsoft and then tries to sign in with an email using the same Microsoft
   email. FirebaseUI can then ask the user to sign in with that email to the
   already registered account with Microsoft. For Microsoft and Yahoo,
   this field is `login_hint`.
